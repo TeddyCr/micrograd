@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "micrograd"
+version = "0.1.0"
+description = "Micrograd-style autodiff playground"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Teddy Crepineau" }
+]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["test"]
